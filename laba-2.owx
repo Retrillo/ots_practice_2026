@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Автомобиль"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#БольшоеКолесо"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ВнедорожныйАвтомобиль"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Двигатель"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Колесо"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Кузов"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#МощныйДвигатель"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#СпортивныйАвтомобиль"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Трансмиссия"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Имеет_Двигатель"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Имеет_Колесо"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Имеет_Кузов"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Имеет_Трансмиссию"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#диаметр"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#модель"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#мощность"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#типПривода"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#цвет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#БМВ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Двигатель_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Двигатель_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Колесо_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Колесо_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кузов_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кузов_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тойота"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Трансмиссия_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Трансмиссия_2"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#БольшоеКолесо"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Колесо"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#диаметр"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ВнедорожныйАвтомобиль"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Автомобиль"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Имеет_Колесо"/>
+                <Class IRI="#БольшоеКолесо"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#МощныйДвигатель"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Двигатель"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#мощность"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#СпортивныйАвтомобиль"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Автомобиль"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Имеет_Двигатель"/>
+                <Class IRI="#МощныйДвигатель"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <ClassAssertion>
+        <Class IRI="#Автомобиль"/>
+        <NamedIndividual IRI="#БМВ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Двигатель"/>
+        <NamedIndividual IRI="#Двигатель_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Двигатель"/>
+        <NamedIndividual IRI="#Двигатель_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Колесо"/>
+        <NamedIndividual IRI="#Колесо_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Колесо"/>
+        <NamedIndividual IRI="#Колесо_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кузов"/>
+        <NamedIndividual IRI="#Кузов_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кузов"/>
+        <NamedIndividual IRI="#Кузов_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Автомобиль"/>
+        <NamedIndividual IRI="#Тойота"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Трансмиссия"/>
+        <NamedIndividual IRI="#Трансмиссия_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Трансмиссия"/>
+        <NamedIndividual IRI="#Трансмиссия_2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Имеет_Двигатель"/>
+        <NamedIndividual IRI="#БМВ"/>
+        <NamedIndividual IRI="#Двигатель_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Имеет_Колесо"/>
+        <NamedIndividual IRI="#БМВ"/>
+        <NamedIndividual IRI="#Колесо_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Имеет_Кузов"/>
+        <NamedIndividual IRI="#БМВ"/>
+        <NamedIndividual IRI="#Кузов_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Имеет_Трансмиссию"/>
+        <NamedIndividual IRI="#БМВ"/>
+        <NamedIndividual IRI="#Трансмиссия_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Имеет_Двигатель"/>
+        <NamedIndividual IRI="#Тойота"/>
+        <NamedIndividual IRI="#Двигатель_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Имеет_Колесо"/>
+        <NamedIndividual IRI="#Тойота"/>
+        <NamedIndividual IRI="#Колесо_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Имеет_Кузов"/>
+        <NamedIndividual IRI="#Тойота"/>
+        <NamedIndividual IRI="#Кузов_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Имеет_Трансмиссию"/>
+        <NamedIndividual IRI="#Тойота"/>
+        <NamedIndividual IRI="#Трансмиссия_1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#модель"/>
+        <NamedIndividual IRI="#БМВ"/>
+        <Literal>BMW</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#мощность"/>
+        <NamedIndividual IRI="#Двигатель_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#мощность"/>
+        <NamedIndividual IRI="#Двигатель_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#диаметр"/>
+        <NamedIndividual IRI="#Колесо_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#диаметр"/>
+        <NamedIndividual IRI="#Колесо_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#цвет"/>
+        <NamedIndividual IRI="#Кузов_1"/>
+        <Literal>Красный</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#цвет"/>
+        <NamedIndividual IRI="#Кузов_2"/>
+        <Literal>Черный</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#модель"/>
+        <NamedIndividual IRI="#Тойота"/>
+        <Literal>Toyota</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#типПривода"/>
+        <NamedIndividual IRI="#Трансмиссия_1"/>
+        <Literal>Передний</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#типПривода"/>
+        <NamedIndividual IRI="#Трансмиссия_2"/>
+        <Literal>Полный</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Имеет_Двигатель"/>
+        <Class IRI="#Автомобиль"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Имеет_Колесо"/>
+        <Class IRI="#Автомобиль"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Имеет_Кузов"/>
+        <Class IRI="#Автомобиль"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Имеет_Трансмиссию"/>
+        <Class IRI="#Автомобиль"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Имеет_Двигатель"/>
+        <Class IRI="#Двигатель"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Имеет_Колесо"/>
+        <Class IRI="#Трансмиссия"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Имеет_Кузов"/>
+        <Class IRI="#Кузов"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Имеет_Трансмиссию"/>
+        <Class IRI="#Трансмиссия"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#диаметр"/>
+        <Class IRI="#Колесо"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#модель"/>
+        <Class IRI="#Автомобиль"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#мощность"/>
+        <Class IRI="#Двигатель"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#типПривода"/>
+        <Class IRI="#Трансмиссия"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#цвет"/>
+        <Class IRI="#Кузов"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#диаметр"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#модель"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#мощность"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#типПривода"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#цвет"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

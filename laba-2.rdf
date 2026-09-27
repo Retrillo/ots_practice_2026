@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Двигатель -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Двигатель">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Колесо -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Колесо">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Кузов -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Кузов">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Трансмиссию -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Трансмиссию">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#диаметр -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#диаметр">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#модель -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#модель">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#мощность -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#мощность">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#типПривода -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#типПривода">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#цвет -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#цвет">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#БольшоеКолесо -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#БольшоеКолесо">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#диаметр"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#ВнедорожныйАвтомобиль -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#ВнедорожныйАвтомобиль">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Колесо"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#БольшоеКолесо"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель"/>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо"/>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов"/>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#МощныйДвигатель -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#МощныйДвигатель">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#мощность"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#СпортивныйАвтомобиль -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#СпортивныйАвтомобиль">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Имеет_Двигатель"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#МощныйДвигатель"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#БМВ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#БМВ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+        <untitled-ontology-3:Имеет_Двигатель rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель_2"/>
+        <untitled-ontology-3:Имеет_Колесо rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо_2"/>
+        <untitled-ontology-3:Имеет_Кузов rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов_2"/>
+        <untitled-ontology-3:Имеет_Трансмиссию rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия_2"/>
+        <untitled-ontology-3:модель>BMW</untitled-ontology-3:модель>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель"/>
+        <untitled-ontology-3:мощность rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</untitled-ontology-3:мощность>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель"/>
+        <untitled-ontology-3:мощность rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</untitled-ontology-3:мощность>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо"/>
+        <untitled-ontology-3:диаметр rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</untitled-ontology-3:диаметр>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо"/>
+        <untitled-ontology-3:диаметр rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</untitled-ontology-3:диаметр>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов"/>
+        <untitled-ontology-3:цвет>Красный</untitled-ontology-3:цвет>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов"/>
+        <untitled-ontology-3:цвет>Черный</untitled-ontology-3:цвет>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Тойота -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Тойота">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Автомобиль"/>
+        <untitled-ontology-3:Имеет_Двигатель rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Двигатель_1"/>
+        <untitled-ontology-3:Имеет_Колесо rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Колесо_1"/>
+        <untitled-ontology-3:Имеет_Кузов rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Кузов_1"/>
+        <untitled-ontology-3:Имеет_Трансмиссию rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия_1"/>
+        <untitled-ontology-3:модель>Toyota</untitled-ontology-3:модель>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия"/>
+        <untitled-ontology-3:типПривода>Передний</untitled-ontology-3:типПривода>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strig/ontologies/2026/8/untitled-ontology-3#Трансмиссия"/>
+        <untitled-ontology-3:типПривода>Полный</untitled-ontology-3:типПривода>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
